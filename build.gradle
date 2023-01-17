@@ -1,0 +1,28 @@
+plugins {
+    id 'org.jetbrains.kotlin.multiplatform' version '1.7.21'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+kotlin {
+    mingwX86("native").with {
+        binaries {
+            executable {
+                entryPoint = 'main'
+            }
+        }
+    }
+    sourceSets {
+        nativeMain {
+
+        }
+        nativeTest {
+
+        }
+    }
+}
