@@ -2,7 +2,7 @@ plugins {
     id 'org.jetbrains.kotlin.multiplatform' version '1.7.21'
 }
 
-group = 'org.example'
+group = 'su.mikhailusachev'
 version = '1.0-SNAPSHOT'
 
 repositories {
